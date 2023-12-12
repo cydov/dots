@@ -1,7 +1,0 @@
-2023-12-10 03:51:18.037 [info] update#setState disabled
-2023-12-10 03:51:18.037 [info] update#ctor - updates are disabled as there is no update URL
-2023-12-10 04:00:22.940 [error] Blocked vscode-webview request vscode-webview://0460va1co2a2q1v76tq1j1eh90j9ih3f88r9hdralh3geh5s7sk9/index.html?id=5ef8c957-881e-4bb6-8566-5e969a90c95c&origin=5ef8c957-881e-4bb6-8566-5e969a90c95c&swVersion=4&extensionId=&platform=electron&vscode-resource-base-authority=vscode-resource.vscode-cdn.net&parentOrigin=vscode-file%3A%2F%2Fvscode-app&disableServiceWorker=true
-2023-12-10 04:00:53.773 [info] Extension host with pid 16686 exited with code: 0, signal: unknown.
-2023-12-10 04:01:23.983 [error] Blocked vscode-webview request vscode-webview://14vec24vs9hv0r7qq04arc97il3ohcidlhb459950b6ds3q2k2v2/index.html?id=7e8ff285-5e32-48ca-bd1d-dc04cf62c03a&origin=7e8ff285-5e32-48ca-bd1d-dc04cf62c03a&swVersion=4&extensionId=&platform=electron&vscode-resource-base-authority=vscode-resource.vscode-cdn.net&parentOrigin=vscode-file%3A%2F%2Fvscode-app&disableServiceWorker=true
-2023-12-10 04:06:13.909 [info] Extension host with pid 21994 exited with code: 0, signal: unknown.
-2023-12-10 04:06:13.914 [error] [UtilityProcess id: 1, type: fileWatcher, pid: 21978]: crashed with code 15 and reason 'killed'

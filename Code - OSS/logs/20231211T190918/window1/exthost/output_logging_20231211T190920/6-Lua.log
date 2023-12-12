@@ -1,2 +1,0 @@
-Log path: file:///home/cyd/.vscode-oss/extensions/sumneko.lua-3.7.3-linux-x64/server/log/file_home_cyd.log
-[Error - 8:33:55 PM] Your workspace is set to `/home/cyd`. Lua language server refused to load this directory. Please check your configuration.[learn more here](https://luals.github.io/wiki/faq#why-is-the-server-scanning-the-wrong-folder)
