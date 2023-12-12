@@ -1,3 +1,3 @@
 function la
-	eza -al
+	eza -al $argv
 end

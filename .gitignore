@@ -6,3 +6,7 @@ Electron/
 Element/
 nvim
 systemd/
+pulse/
+QtProject.conf
+*torage*
+*istory
