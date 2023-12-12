@@ -1,0 +1,10 @@
+{
+    "editor.renderWhitespace": "boundary",
+    "editor.cursorStyle": "block",
+    "workbench.colorTheme": "Wal",
+    "editor.fontFamily": "'Incolsolata Go Nerd', 'Droid Sans Mono', 'monospace', monospace",
+    "editor.accessibilitySupport": "off",
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "window.titleBarStyle": "custom",
+    "window.menuBarVisibility": "compact"
+}

@@ -1,0 +1,27 @@
+{
+	"layer": "top",
+	"position": "top",
+	"mod": "dock",
+	"fixed-center": true,
+	"spacing": 3,
+	"exclusive": true,
+	"passthrough": false,
+	"gtk-layer-shell": true,
+	"modules-left": [
+		"hyprland/workspaces",
+		"custom/filemanager",
+		"hyprland/window"
+	],
+	"modules-center": [
+		"clock"
+	],
+	"modules-right": [
+		
+		"tray",
+		"memory",
+		"network",
+		"wireplumber"
+	],
+
+	"include" : ["~/.config/waybar/modules.json"]
+}

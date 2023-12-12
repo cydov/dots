@@ -1,0 +1,67 @@
+# See dunst(5) for all configuration options
+
+[global]
+    ### Display ###
+    #monitor = 0
+
+    # Display on the focused monitor
+    #   mouse: follows the mouse pointer
+    #   keyboard: follow the active window
+    #   none: use the "monitor" value above.
+    #follow = none # default
+    follow = keyboard
+    #follow = mouse
+
+    ### Geometry ###
+
+    # use a dynamic width 
+    width = (30, 300)
+    # constant width
+    #width = 300
+
+    # The max height of a single notification, excluding the frame
+    height = (3, 300)
+
+    # Where should the notification draw from
+    ### The choices are:
+        top-left
+        top-center
+        top-right
+        bottom-left
+        bottom-center
+        bottom-right
+        left-center
+        center
+        right-center
+    ###
+    origin = top-center
+
+    # How far from the origin to display
+    # Format ( horizontal, vertical )
+    offset = 0x18
+
+    # Scale -- (X11 only) Avoid fractional scaling
+    scale = 0 # default
+
+    ### Progress bar ###
+
+    # Turn on the progress bar. It appears when a progress hint is passed
+    # IE - `dunstify -h int:value:12
+    prgress_bar = true
+
+    # Set the height, including frame, so make sure it's X 2 the size of the frame
+    #progress_bar_height = 10 # default
+    progress_bar_height = 9
+    progress_bar_frame_width = 1   # default
+    progress_bar_min_width = 150   # default
+    progress_bar_max_width = 300   # default
+    progress_bar_corner_radius = 0 # default 0
+    icon_corner_radius = 12        # default 0
+
+    # Notification-limit -- The max # of notify at the same time
+    # default = 20
+    notification-limit = 9
+
+    # Indicates whether a notification informing how many notifications were
+    # hidden due to the limit
+    indicate_hidden = true # default

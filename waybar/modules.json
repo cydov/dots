@@ -1,0 +1,106 @@
+{
+   "hyprland/workspaces" : {
+      "actions" : {
+         "on-click" : "activate"
+      },
+      "disable-scroll" : true,
+      "all-outputs" : true,
+      "format" : "{icon}",
+      "format-icons" : {
+         "1" : "",
+         "2" : "",
+         "3" : "",
+         "4" : "",
+         "5" : "",
+         "6" : "",
+         "urgent" : "",
+         "active" : "",
+         "default" : ""
+      },
+      "persistent_workspaces" : {
+         "*" : 6
+      }
+   },
+
+   "wlr/taskbar" : {
+      "actions" : {
+         "on-click" : "activate",
+         "on-click-middle" : "close"},
+      "format" : "{icon}",
+      "icon-size" : 18,
+      "tooltip-format" : "{title}",
+      "ignore-list": [
+         "Kitty"
+      ]
+   },
+
+   "hyprland/window": {
+      "rewrite": {
+         "(.*) - LibreWolf": "[$1]",
+         "(.*) - Visual Studio Code": "$1"
+      },
+      "seperate-outputs": true,
+      "max-length" : 51
+   },
+
+   "custom/filemanager" : {
+      "format" : "{icon}",
+      "on-click" : "thunar",
+      "tooltip" : "Thunar",
+      "format-icons": [""]
+   },
+
+   "custom/browser" : {
+      "format" : "",
+      "on-click" : "librewolf",
+      "tooltip" : false
+   },
+
+   "tray" : {
+      "spacing" : 18
+   },
+
+   "clock" : {
+      "format": "{:%d-%m   %I:%M %p}",
+      "tooltip": true
+   },
+
+   "memory" : {
+      "format" : "/ C {usage}% ",
+      "on-click": "kitty -e btop"
+   },
+
+   "network" : {
+      "actions" : {
+         "on-click" : "kitty -e nmtui"
+      },
+      "format-wifi" : "({signalStrength}%) {icon}",
+      "tooltip-format-wifi" : "{essid}: {ipaddr}/{cidr} ({signalstrength}%) {icon}",
+      "format-ethernet" : "{ipaddr}/{cidr} {icon}",
+      "tooltip-format-ethernet" : "{ifname} ({ipaddr}/{cidr}) {icon}",
+      "format-disconnected" : "DC {icon}",
+      "tooltip-format-disconnected" : "{icon} disconnected",
+      "max-length" : 48,
+      "format-icons" : [
+         "",
+         "",
+         ""
+      ]
+   },
+
+   "bluetooth" : {
+      "format-disabled" : "",
+      "format-off" : "",
+      "interval" : 30,
+      "on-click" : "blueman-manager"
+   },
+
+   "user" : {
+      "format" : "{icon}",
+      "interval" : 60,
+      "icon" : true,
+      "format-icons" : [
+         ""
+      ]
+   }
+}

@@ -1,0 +1,6 @@
+2023-12-10 04:06:48.888 [info] Started local extension host with pid 22740.
+2023-12-10 04:06:54.060 [info] [perf] Render performance baseline is 28ms
+2023-12-10 04:07:17.701 [info] Started local extension host with pid 22954.
+2023-12-10 04:07:20.410 [info] [perf] Render performance baseline is 28ms
+2023-12-10 04:07:22.014 [error] [File Watcher (parcel)] Unexpected error: inotify_add_watch on '/home/cyd/.config/Code - OSS/User/workspaceStorage/1702205478218' failed: No such file or directory (EUNKNOWN) (path: /home/cyd)
+2023-12-10 04:07:22.014 [error] [File Watcher (universal)] restarting watcher after error: inotify_add_watch on '/home/cyd/.config/Code - OSS/User/workspaceStorage/1702205478218' failed: No such file or directory
