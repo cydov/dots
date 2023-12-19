@@ -1,7 +1,7 @@
-*cache*
-*log*
+**/*[cC]ache*
+**/*[l/L]og*
+**/*.ba[cCkK]*
 ArmCord/
-*Cache/
 Electron/
 Element/
 nvim
@@ -10,3 +10,4 @@ pulse/
 QtProject.conf
 *torage*
 *istory
+**.lock
