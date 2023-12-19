@@ -1,6 +1,7 @@
 **/*[cC]ache*
 **/*[l/L]og*
 **/*.ba[cCkK]*
+**/*[sS]ervice [wW]orker*
 ArmCord/
 Electron/
 Element/
