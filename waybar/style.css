@@ -1,79 +1,112 @@
 @import '../../.cache/wal/colors-waybar.css' ;
 
 * {
-   border: none;
-   border-radius: 0;
-   font-family: Fira Sans Compressed Semibold, FiraCode Nerd, Font Awesome;
-   font-size: 18px;
-   font-weight: 200;
-   box-shadow: none;
-   text-shadow: none;
-   transition-duration: 0s;
+   font-family : EnvyCodeR Nerd Font Mono, EnvyCodeR Nerd Font, Font Awesome;
+   font-size : 21px;
+   font-weight : normal;
+   min-height : 30px;
 }
 
 window {
-   color: @foreground;
-   background: transparent;
+   border : none;
+   color : @foreground;
+   background-color : shade(alpha(@background, 0.03), 0.6);
+   transition-property : background-color;
+   transition-duration : .5s;
 }
 
-tooltip {
-   border-radius: 18px;
-   background-color: @background;
-   opacity: 0.81;
-   padding: 21px;
-   margin: 0px;
-}
-
-tooltip label {
-   color: @foreground;
-}
-
-.modules-left, .modules.center, .modules-right {
-   padding: 0px 18px;
-   transition: none;
-   border-radius: 24px;
-   border: 3px outset @color2;
-   background: alpha(@background, 0.6);
+.modules-left, .modules-right, .modules-center {
+   border-bottom-style : hidden;
+   border-top-left-radius: 0%;
+   border-top-right-radius: 0%;
+   background-color : shade(alpha(@background, 1), 1);
+   color : shade(alpha(@foreground, 1), 1);
+   padding-left : 18px;
+   padding-right : 18px;
+   box-shadow : inset 0 -3px shade(alpha(@color11, 0.9), 0.84);
 }
 
 .modules-left {
-   margin: 0px 0px 0px 12px;
+   border-bottom-right-radius: 9px;
 }
 
 .modules-right {
-   margin: 0px 12px 0px 0px;
+   border-bottom-left-radius: 9px;
 }
 
-#workspaces {
-   padding: .15rem;
+.modules-center {
+   border-bottom-left-radius: 9px;
+   border-bottom-right-radius: 9px;
+}
+
+button {
+   box-shadow : inset 0 -3px transparent;
+   border : none;
+   color : shade(@foreground, 1);
+   animation : gradient_f 20s ease-in infinite;
+   transition : all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+button.hover {
+   background-color: shade(@color11, 0.66);
+} 
+
+button.active {
+   color : shade(@foreground, 1);
+}
+
+tooltip {
+   border-radius : 18px;
+   background-color : @background;
+   opacity : 0.81;
+   padding : 21px;
+   margin : 0px;
+}
+
+tooltip label {
+   color : @foreground;
 }
 
 #workspaces button {
-   background: transparent;
-   color: shade(@foreground, 0.51);
-}
-
-#workspaces button:hover {
-   color: @color5;
+   color : shade(@foreground, 0.42);
 }
 
 #workspaces button.active {
-   color: @foreground;
+   color : shade(@foreground, 1);
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+   margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+   margin-right: 0;
 }
 
 #clock,
-#tray,
-#custom-filemanager,
-#hyprland-window,
+#battery,
+#cpu,
 #memory,
+#disk,
+#temperature,
+#backlight,
 #network,
+#pulseaudio,
 #wireplumber,
-#temperature {
-   padding: 0px 6px;
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#mpd {
+   padding-left: 6px;
+   padding-right: 6px;
 }
 
-#clock {
-   background: alpha(@background, 0.51);
-   border-radius: 24px;
-   border: 3px outset @color2;
+#window,
+#workspaces {
+    margin: 0 9px;
 }
+

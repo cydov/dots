@@ -1,4 +1,4 @@
 function ls
-	eza -Gl $argv
+	eza -Gl --icons=auto $argv
 end
 

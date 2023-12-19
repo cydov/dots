@@ -1,15 +1,15 @@
 
 /* ---- Configuration ---- */
 configuration {
-    modi:                       "drun,run";
-    font:                       "Fira Sans Bold 12";
+    modi:                       "drun,run,filebrowser,window";
+    font:                       "EnvyCodeR Nerd Font Propo 12";
     show-icons:                 true;
-    icon-theme:                 "kora";
-    display-drun:               "APPS";
-    display-run:                "RUN";
-    display-filebrowser:        "FILES";
-    display-window:             "WINDOW";
-	drun-display-format:        "{name}";
+    icon-theme:                 "Tela-circle-nord-dark";
+    display-drun:                "";
+    display-run:                 "";
+    display-filebrowser:         "";
+    display-window:              "";
+	drun-display-format:         "{name}";
     hover-select:               true;
     me-select-entry:            "";
     me-accept-entry:            "MousePrimary";
@@ -28,16 +28,15 @@ window {
     spacing:                      0px;
     padding:                      0px;
     margin:                       0px; 
-    color:                        #FFFFFF;
     border:                       3px;
-    border-color:                 #FFFFFF;
+    border-color:		  @border-color;
+    border-radius:		  0px;
     cursor:                       "default";
     transparency:                 "real";
     location:                     center;
     anchor:                       center;
     fullscreen:                   false;
     enabled:                      true;
-    border-radius:                10px;
     background-color:             transparent;
 }
 
@@ -47,14 +46,13 @@ mainbox {
     orientation:                  horizontal;
     spacing:                      0px;
     margin:                       0px;
-    background-color:             @background;
-    background-image:             url("~/.cache/current_wallpaper.jpg", height);
+    background-color:		  @background;
     children:                     ["imagebox","listbox"];
 }
 
 /* ---- Imagebox ---- */
 imagebox {
-    padding:                      18px;
+    spacing:			  21px;
     background-color:             transparent;
     orientation:                  vertical;
     children:                     [ "inputbar", "dummy", "mode-switcher" ];
@@ -62,7 +60,7 @@ imagebox {
 
 /* ---- Listbox ---- */
 listbox {
-    spacing:                     20px;
+    spacing:                     21px;
     background-color:            transparent;
     orientation:                 vertical;
     children:                    [ "message", "listview" ];
@@ -77,11 +75,11 @@ dummy {
 inputbar {
     enabled:                      true;
     text-color:                   @foreground;
-    spacing:                      10px;
+    spacing:                      12px;
     padding:                      15px;
-    border-radius:                10px;
-    border-color:                 @foreground;
-    background-color:             @background;
+    border-radius:                0px;
+    border-color:                 @border-color;
+    background-color:             inherit;
     children:                     [ "textbox-prompt-colon", "entry" ];
 }
 
@@ -90,7 +88,7 @@ textbox-prompt-colon {
     expand:                       false;
     str:                          "";
     background-color:             transparent;
-    text-color:                   inherit;
+    text-color:                   @foreground;
 }
 
 entry {
@@ -120,15 +118,15 @@ button {
 }
 
 button selected {
-    background-color:             inherit;
-    text-color:                   @foreground;
+    background-color:             @selected-normal-background;
+    text-color:                   @selected-normal-foreground;
 }
 
 /* ---- Listview ---- */
 listview {
     enabled:                      true;
     columns:                      1;
-    lines:                        8;
+    lines:                        12;
     cycle:                        true;
     dynamic:                      true;
     scrollbar:                    false;
@@ -137,51 +135,51 @@ listview {
     fixed-height:                 true;
     fixed-columns:                true;
     spacing:                      0px;
-    padding:                      10px;
+    padding:                      9px;
     margin:                       0px;
     background-color:             @background;
-    border:0px;
+    border:			  0px;
 }
 
 /* ---- Element ---- */
 element {
     enabled:                      true;
-    padding:                      10px;
-    margin:                       5px;
+    padding:                      9px;
+    margin:                       6px;
     cursor:                       pointer;
     background-color:             @background;
-    border-radius:                10px;
-    border:                       2px;
+    border-radius:                0px;
+    border:                       3px;
 }
 
 element normal.normal {
-    background-color:            inherit;
-    text-color:                  @foreground;
+    background-color:            @normal-background;
+    text-color:                  @normal-foreground;
 }
 
 element normal.urgent {
-    background-color:            inherit;
-    text-color:                  @foreground;
+    background-color:            @urgent-background;
+    text-color:                  @urgent-foreground;
 }
 
 element normal.active {
-    background-color:            inherit;
-    text-color:                  @foreground;
+    background-color:            @active-background;
+    text-color:                  @active-foreground;
 }
 
 element selected.normal {
-    background-color:            inherit;
-    text-color:                  @foreground;
+    background-color:            @selected-normal-background;
+    text-color:                  @selected-normal-foreground;
 }
 
 element selected.urgent {
-    background-color:            inherit;
-    text-color:                  @foreground;
+    background-color:            @selected-urgent-background;
+    text-color:                  @selected-urgent-foreground;
 }
 
 element selected.active {
-    background-color:            inherit;
-    text-color:                  @foreground;
+    background-color:            @selected-active-background;
+    text-color:                  @selected-active-foreground;
 }
 
 element alternate.normal {
@@ -217,11 +215,11 @@ element-text {
 /*****----- Message -----*****/
 message {
     background-color:            transparent;
-    border:0px;
-    margin:20px 0px 0px 0px;
-    padding:0px;
-    spacing:0px;
-    border-radius: 10px;
+    border:			 0px;
+    margin:			 20px 0px 0px 0px;
+    padding:  			 0px;
+    spacing:			 0px;
+    border-radius:		 10px;
 }
 
 textbox {

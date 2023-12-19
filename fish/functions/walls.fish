@@ -1,4 +1,4 @@
-function showwall -d "Using the values of setwall; display the wallpaper. Parameters: wipe, outer, or none"
+function walls -d "Using the values of wallc; display the wallpaper. Parameters: wipe, outer, or none"
     begin
     set -f type $argv[1]
     set -f bez .43,1.19,1,.4

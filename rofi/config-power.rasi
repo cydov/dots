@@ -2,7 +2,7 @@
 /* ---- Configuration ---- */
 configuration {
     modi:                       "drun,run";
-    font:                       "Fira Sans Bold 10";
+    font:                       "EnvyCodeR Nerd Font Propo 12";
     show-icons:                 false;
     icon-theme:                 "kora";
     display-drun:               "APPS";

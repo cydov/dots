@@ -1,8 +1,8 @@
 # Handles wallpaper tasks
-function setwall -d "Initialize, choose, or randomly set a wallpaper. Valid options are init = Initialize; choose = a menu of images; anything else will be random."
+function wallc -d "Initialize, choose, or randomly set a wallpaper. Valid options are init = Initialize; choose = a menu of images; anything else will be random."
     # Singleton setting of the wallpaper directory
     if test -e $walls
-        set -xU walls ~/wallpaper
+        set -x walls ~/wallpaper
     end
     # Sets the inputted method desired, valid options are:
     # 'init':   to use the wallpaper used last -- for initial launch only)
@@ -23,5 +23,5 @@ function setwall -d "Initialize, choose, or randomly set a wallpaper. Valid opti
     # Kill and relaunch Waybar to use the new colorscheme
     startbar
     # After running Pywall to generate a colorscheme; run SWWW with the results to display the wallpaper.
-    showwall wipe
+    walls wipe
 end

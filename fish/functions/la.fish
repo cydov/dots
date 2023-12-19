@@ -1,3 +1,3 @@
 function la
-	eza -al $argv
+	eza -al --icons=auto $argv
 end

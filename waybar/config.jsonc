@@ -1,0 +1,126 @@
+{
+	"layer": "top",
+	"position": "top",
+	"mod": "dock",
+	"fixed-center": true, 
+	"exclusive": true,
+	"passthrough": false,
+
+	"modules-left": [
+		"hyprland/workspaces",
+		"wlr/taskbar",
+		"hyprland/window"
+	],
+	"modules-center": [
+		"custom/filemanager",
+		"custom/pad",
+		"custom/browser",
+		"custom/pad",
+		"clock"
+	],
+	"modules-right": [
+		"tray",
+		"network",
+		"wireplumber"
+	],
+
+	"hyprland/workspaces" : {
+		"actions" : {
+		   "on-click" : "activate",
+		   "on-click-right" : "close"
+		},
+		"disable-scroll" : true,
+		"all-outputs" : false,
+		"format" : "{icon}",
+		"format-icons" : {
+		   "default" : "",
+		   "urgent" : "",
+		   "active" : ""
+		}
+	 },
+
+	 "hyprland/window": {
+		"format" : "{}",
+		"rewrite" : {
+		   "(.*)- LibreWolf$" : "  - $1",
+		   "(.*) - Visual Studio Code": "[$1]",
+		   "(.*) - v" : "[$1]" 
+		},
+		"max-length" : 66
+	 },
+  
+	 "custom/filemanager" : {
+		"format" : "{icon}",
+		"on-click" : "thunar",
+		"tooltip" : true,
+		"tooltip-format" : "Thunar - File Manager",
+		"icon-size" : 24,
+		"format-icons": [""]
+	 },
+  
+	 "custom/browser" : {
+		"format" : "{icon}",
+		"tooltip" : "LibreWolf",
+		"tooltip-format" : "Librewolf",
+		"icon-size" : 24,
+		"format-icons" : [""],
+		"on-click" : "librewolf"
+	 },
+
+	 "custom/pad" : {
+		"format" : " ",
+		"tooltip" : "false"
+	 },
+  
+	 "tray" : {
+		"spacing" : 12,
+		"icon-size" : 18
+	 },
+  
+	 "clock" : {
+		"format": "{:%d-%m   %I:%M %p}",
+		"tooltip": true
+	 },
+  
+	 "network" : {
+		"format-ethernet" : "{icon}",
+		"format-wifi" : "{essid} {signaldBm} {icon}",
+		"format-disconnected" : "{icon}",
+		"format-linked" : "{icon}",
+		"tooltip" : true,
+		"tooltip-format" : "{ipaddr} {bandwidthUpOclets} {bandwidthDownOclets}",
+		"format-icons" : {
+			"ethernet" : "",
+			"disconnected" : ""
+		}
+	 },
+  
+	 "bluetooth" : {
+		"format-disabled" : "",
+		"format-off" : "",
+		"interval" : 30,
+		"on-click" : "blueman-manager"
+	 },
+  
+	 "user" : {
+		"format" : "{icon}",
+		"interval" : 60,
+		"icon" : true,
+		"format-icons" : [
+		   ""
+		]
+	 },
+
+	 "wlr/taskbar" : {
+		"format" : "{icon}",
+		"icon-size" : 24,
+		"icon-theme" : "Tela-circle-nord-dark",
+		"spacing" : 0,
+		"tooltip-format" : "{title}",
+		"on-click" : "activate",
+		"on-click-middle" : "close",
+		"ignore-list" : [
+			"kitty"
+		]
+	 }
+}
