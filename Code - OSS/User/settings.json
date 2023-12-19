@@ -12,5 +12,6 @@
     "editor.autoClosingComments": "beforeWhitespace",
     "editor.cursorBlinking": "smooth",
     "editor.cursorSmoothCaretAnimation": "on",
-    "editor.fontLigatures": true
+    "editor.fontLigatures": true,
+    "explorer.confirmDelete": false
 }
