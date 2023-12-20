@@ -14,6 +14,8 @@
 	"modules-center": [
 		"custom/filemanager",
 		"custom/pad",
+		"custom/code",
+		"custom/pad",
 		"custom/browser",
 		"custom/pad",
 		"clock"
@@ -60,11 +62,20 @@
   
 	 "custom/browser" : {
 		"format" : "{icon}",
-		"tooltip" : "LibreWolf",
+		"tooltip" : true,
 		"tooltip-format" : "Librewolf",
 		"icon-size" : 24,
 		"format-icons" : [""],
 		"on-click" : "librewolf"
+	 },
+
+	 "custom/code" : {
+		"format" : "{icon}",
+		"tooltip-format" : "Visual Code",
+		"tooltip" : true,
+		"icon-size" : 24,
+		"format-icons" : [""],
+		"on-click" : "code"
 	 },
 
 	 "custom/pad" : {
@@ -83,15 +94,18 @@
 	 },
   
 	 "network" : {
-		"format-ethernet" : "{icon}",
-		"format-wifi" : "{essid} {signaldBm} {icon}",
+		"format" : "{icon}",
+		"format-wifi" : "{essid} ({signaldBm}) {icon}",
 		"format-disconnected" : "{icon}",
 		"format-linked" : "{icon}",
 		"tooltip" : true,
-		"tooltip-format" : "{ipaddr} {bandwidthUpOclets} {bandwidthDownOclets}",
+		"tooltip-format" : "{ipaddr}/{cidr} {bandwidthUpOclets} {bandwidthDownOclets}",
+		"tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+		"tooltip-format-disconnected": "Disconnected",
 		"format-icons" : {
 			"ethernet" : "",
-			"disconnected" : ""
+			"disconnected" : "",
+			"wifi" : ""
 		}
 	 },
   
