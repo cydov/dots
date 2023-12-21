@@ -1,7 +1,6 @@
 {
     "editor.renderWhitespace": "boundary",
     "editor.cursorStyle": "block-outline",
-    "workbench.colorTheme": "Wal Bordered",
     "editor.fontFamily": "'EnvyCodeR Nerd Font', 'Incolsolata Go Nerd', 'Droid Sans Mono', 'monospace', monospace",
     "editor.accessibilitySupport": "off",
     "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
@@ -13,5 +12,9 @@
     "editor.cursorBlinking": "smooth",
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.fontLigatures": true,
-    "explorer.confirmDelete": false
+    "explorer.confirmDelete": false,
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "workbench.colorTheme": "Wal Bordered"
 }
