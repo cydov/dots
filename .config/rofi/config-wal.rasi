@@ -1,0 +1,85 @@
+/* ----- Theming ----- */
+//@theme "catppuccin-mocha.rasi"
+@theme "~/.config/wal/colors-rofi-dark.rasi"
+
+/* ----- Configuration ----- */
+configuration {
+   modi:                   "drun";
+   font:                   "Iosevka Nerd Font 9";
+   show-icons:             true;
+   drun-display-format:    "{name}";
+}
+
+/* ----- Main ----- */
+window {
+   enabled:                true;
+   fullscreen:             false;
+   height:                 100%;
+   width:                  57%;
+   transparency:           "real";
+   cursor:                 "default";
+   spacing:                0px;
+   padding:                0px;
+   border:                 0px;
+   border-radius:          0px;
+   border-color:           transparent;
+   background-color:       @bg;
+}
+
+mainbox {
+   enabled:                true;
+   children:               [ "listview" ];
+   background-color:       @bg;
+}
+
+/* ----- Lists ----- */
+listview {
+   enabled:                true;
+   columns:                1;
+   lines:                  6;
+   spacing:                39px;
+   padding:                50px 60px 50px 60px;
+   cycle:                  true;
+   dynamic:                false;
+   scrollbar:              false;
+   layout:                 vertical;
+   reverse:                true;
+   background-color:       transparent;
+   text-color:             @fg;
+}
+
+/* ----- Elements ------ */
+element {
+   enabled:                true;
+   orientation:            vertical;
+   spacing:                0px;
+   padding:                40px;
+   border-radius:          0px;
+   cursor:                 pointer;
+   background-color:       transparent;
+   text-color:             @fg;
+}
+@media(max-aspect-ratio: 1.8) {
+    element {
+        orientation:             vertical;
+    }
+}
+
+element selected.normal {
+    background-color:            @bg-sel;
+    text-color:                  @fg-sel;
+}
+element-icon {
+    size:                        33%;
+    cursor:                      inherit;
+    border-radius:               35px;
+    background-color:            transparent;
+    text-color:                  inherit;
+}
+element-text {
+    vertical-align:              0.5;
+    horizontal-align:            0.5;
+    cursor:                      inherit;
+    background-color:            transparent;
+    text-color:                  inherit;
+}

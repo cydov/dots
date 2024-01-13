@@ -1,0 +1,105 @@
+/* ------ Theming ----- */
+//@theme "catppuccin-mocha.rasi"
+@theme "~/.cache/wal/colors-rofi-dark.rasi"
+
+configuration {
+   modi:                        "drun";
+   show-icons:                  false;
+   font:                        "Iosevka Nerd Font 9";
+}
+
+// Main //
+window {
+   height:                      55%;
+   width:                       20%;
+   transparency:                "real";
+   fullscreen:                  false;
+   enabled:                     true;
+   cursor:                      "default";
+   spacing:                     0px;
+   padding:                     0px;
+   border:                      2px;
+   border-radius:               0px;
+   border-color:                @bg-col;
+   background-color:            transparent;
+}
+
+mainbox {
+    enabled:                     true;
+    spacing:                     0px;
+    orientation:                 vertical;
+    children:                    [ "inputbar" , "listbox" ];
+    background-color:            transparent;
+}
+message {
+   border:                       0px;
+   margin:                       20px 0px 0px 0px;
+   padding:                      9px;
+   spacing:                      0px;
+   background-color:             @bg-color;
+}
+
+// Inputs //
+inputbar {
+    enabled:                     true;
+    children:                    [ "entry" ];
+    background-color:            @bg-col;
+   text-color:                   @fg-color;
+}
+entry {
+    enabled:                     true;
+    padding:                     7px;
+    text-color:                  @fg-col;
+    background-color:            @bg-col;
+}
+
+
+// Lists //
+listbox {
+    spacing:                     0px;
+    padding:                     6px;
+    children:                    [ "listview" ];
+    background-color:            @bg-col;
+}
+listview {
+    enabled:                     true;
+    columns:                     1;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                false;
+    fixed-columns:               true;
+    cursor:                      "default";
+    background-color:            transparent;
+    text-color:                  @fg-col;
+}
+
+
+// Elements //
+element {
+    enabled:                     true;
+    spacing:                     0px;
+    padding:                     12px;
+    border-radius:               10px;
+    cursor:                      pointer;
+    background-color:            transparent;
+    text-color:                  @fg-col;
+}
+@media(max-aspect-ratio: 1.8) {
+    element {
+        orientation:             vertical;
+    }
+}
+element selected.normal {
+    background-color:            @bg-selected-col;
+    text-color:                  @fg-selected-col;
+}
+element-text {
+    vertical-align:              0.0;
+    horizontal-align:            0.0;
+    cursor:                      inherit;
+    background-color:            transparent;
+    text-color:                  inherit;
+}

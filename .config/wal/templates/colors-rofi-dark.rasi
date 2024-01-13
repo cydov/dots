@@ -1,0 +1,75 @@
+* {{
+   /* --- Color Assignments --- */
+   // Light Scheme
+   /*
+   bg: #fffffa;
+   fg: #0e0004;
+   */
+
+   // Dark Scheme
+   bg: {background};
+   fg: {foreground};
+
+   border: #E07BE0;
+
+   bg-act: {color2};
+   fg-act: @fg;
+
+   bg-act-sel: {color3};
+   fg-act-sel: @fg-act;
+   bg-act-urgent: {color7};
+   fg-act-urgent: @fg-act;
+
+   bg-sel: {color4};
+   fg-sel: @fg;
+   bg-sel-urgent: @bg-sel;
+   fg-sel-urgent: @fg-sel;
+
+   fg-urgent: @fg;
+   bg-urgent: #420039;
+
+   fg-alt: @fg;
+   fg-alt-sel: @fg-alt;
+   fg-alt-urgent: @fg-alt;
+   fg-alt-act: @fg-alt;
+
+   bg-alt: @bg;
+   bg-alt-sel: @bg-sel;
+   bg-alt-urgent: @bg-alt;
+   bg-alt-act: @bg-act;
+
+   /* --- Color to Elements --- */
+   bg-col:                          @bg;
+   fg-col:                          @fg;
+
+   border-col:                      @border;
+
+   bg-act-col:                      @bg-act; 
+   bg-act-selected-col:             @bg-act-sel;
+   bg-act-urgent-col:               @bg-act-urgent;
+
+   fg-act-col:                      @fg-act;
+   fg-act-selected-col:             @fg-act-sel;
+   fg-act-urgent-col:               @fg-act-urgent;
+
+   bg-selected-col:                 @bg-sel;
+   fg-selected-col:                 @fg-sel;
+   bg-selected-urgent-col:          @bg-sel-urgent;
+   fg-selected-urgent-col:          @fg-sel-urgent;
+
+   fg-urgent-col:                   @fg-urgent;
+   bg-urgent-col:                   @bg-urgent;
+
+   fg-alt-col:                      @fg;
+   fg-alt-selected-col:             @fg-alt-sel;
+   fg-alt-urgent-col:               @fg-alt-urgent;
+   fg-alt-act-col:                  @fg-alt-act;
+
+   bg-alt-col:                      @bg-alt;
+   bg-alt-selected-col:             @bg-alt-sel;
+   bg-alt-urgent-col:               @bg-alt-urgent;
+   bg-alt-act-col:                  @bg-alt-act;
+
+   width: 900px;
+   spacing: 2px;
+}}
