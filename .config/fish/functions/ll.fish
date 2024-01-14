@@ -1,3 +1,3 @@
 function ll
-	eza -al --icons=auto $argv
+	eza -Tl --level=3 --icons=auto $argv
 end
