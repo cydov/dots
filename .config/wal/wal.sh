@@ -11,7 +11,7 @@ getWallpaper() {
          ;;
 
       "choose")
-         selected=$(basename -a $walls* | rofi -dmenu -replace -config ~/.config/rofi/config-wal.rasi)
+         selected=$(rofi -theme wallpaper-choose.rasi -show filebrowser -filebrowser-directory $walls -filebrowser-command 'basename')
          if [ ! "$selected" ]; then
             exit
          else

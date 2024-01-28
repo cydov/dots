@@ -38,11 +38,10 @@
    bg-alt-urgent: @bg-alt;
    bg-alt-act: @bg-act;
 
-   /* --- Color to Elements --- */
-   bg-col:                          @bg;
-   fg-col:                          @fg;
+   background-color:          @bg;
+   text-color:                @fg;
 
-   border-col:                      @border;
+   border-color:              @border;
 
    bg-act-col:                      @bg-act; 
    bg-act-selected-col:             @bg-act-sel;
@@ -71,5 +70,5 @@
    bg-alt-act-col:                  @bg-alt-act;
 
    width: 900px;
-   spacing: 2px;
+   spacing: 1em;
 }}

@@ -1,0 +1,1 @@
+/home/cyd/dots/.config/fish
