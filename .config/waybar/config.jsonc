@@ -8,10 +8,6 @@
 
 	"modules-left": ["hyprland/workspaces", "hyprland/window"],
 	"modules-center": [
-		"custom/filemanager",
-		"custom/pad",
-		"custom/browser",
-		"custom/pad",
 		"clock",
 		"wlr/taskbar"
 	],
